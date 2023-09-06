@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 09</title>
+</head>
+<body>
+    <h1>Avaliação Semestral</h1>
+    Nome: <input id="nome" type="text"> <br>
+    Nota na avaliação continuada: <input id="nota_continuada" type="number"> <br>
+    Nota na avaliaçao semestral: <input id="nota_semestral" type="number"> <br>
+    <button onclick="media()"> Calcular média:</button>
+</body>
+</html>
+
+<script>
+    function media(){
+        alert("A média de: " + nome.value + " será de: " + (nota_continuada.value * 0.4 + nota_semestral.value * 0.6)); 
+    }
+</script>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula_02</title>
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+    Número 1: <input id="input_n1" type="number"> <br> <!-- Somente números -->
+    Número 2: <input id="input_n2" type="number"> <br>
+    <button onclick="multiplicar()">Multiplicar</button>
+    <button onclick="dividir()">Dividir</button>
+    <button onclick="subtrair()">Subtrair</button>
+    <button onclick="somar()">Somar</button>
+</body>
+
+</html> 
+
+<script>
+    function multiplicar(){
+        alert(`
+            O produto entre ${input_n1.value} e ${input_n2.value} resulta em ${input_n1.value * input_n2.value}
+        `); // Template string
+
+        input_n1.value = 1000;
+    
+
+        // alert ("O produto entre " + input_n1.value + " e " + input_n2.value + " resulta em " + (input_n1.value * input_n2.value)); // 
+    }
+
+    function dividir(){
+        alert ("A razão entre " + input_n1.value + " e " + input_n2.value + " resulta em " + (input_n1.value / input_n2.value));
+    }
+
+    function subtrair(){
+        alert ("A subtração entre " + input_n1.value + " e " + input_n2.value + " resulta em " + (input_n1.value - input_n2.value));
+    }
+
+    function somar(){
+        alert ("A soma entre " + input_n1.value + " e " + input_n2.value + " resulta em " + (Number(input_n1.value) + Number (input_n2.value))); // Number para deixar os valores como números e não concatenar
+    }
+</script>

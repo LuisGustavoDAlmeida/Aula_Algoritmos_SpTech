@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+</head>
+<body>
+    <h1>Quanto cada um irá pagar pela Pizza?</h1>
+    Valor da Pizza: <input id="valor_pizza" type="number"> <br> 
+    Quantidade pessoas: <input id="qtd_pessoas" type="text"> <br>
+    <button onclick="preço_pizza()">#LovePizza</button>
+</body>
+</html>
+
+<script>
+    function preço_pizza(){
+        alert("Cada um dos " + qtd_pessoas.value + " amigos vai pagar R$" + (valor_pizza.value / qtd_pessoas.value));
+    }
+</script>
